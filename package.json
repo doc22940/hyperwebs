@@ -2,6 +2,10 @@
   "name": "cole-peters-design",
   "version": "0.0.0",
   "description": "My design on the hyperweb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colepeters/hyperwebs.git"
+  },
   "main": "pages/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

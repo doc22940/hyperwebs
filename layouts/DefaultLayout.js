@@ -13,7 +13,7 @@ if (typeof window !== 'undefined') {
 const DefaultLayout = ({ title, children, ...props }) => (
   <div {...props}>
     <Head>
-      <title>{ `Cole Peters, designer/developer` }</title>
+      <title>{ `${title}: Cole Peters, designer/developer` }</title>
     </Head>
 
     { children }

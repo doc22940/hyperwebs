@@ -2,7 +2,10 @@ import React from 'react'
 import { Box, Heading, Color } from 'axs'
 
 export default () => (
-  <Box p={[3, 4]} css={{ position: 'relative' }}>
+  <Box
+    py={[64, 128]}
+    px={[32, 64, null, 128]}
+    css={{ position: 'relative' }}>
     <Heading is='h1' css={{ position: 'relative', left: '-0.05em', letterSpacing: '-0.0125em' }}>
       Cole Peters
     </Heading>

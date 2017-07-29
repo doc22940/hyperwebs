@@ -7,7 +7,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.666;
   color: #111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,7 +38,7 @@ a {
   text-decoration: none;
   color: currentColor;
   font-weight: 500;
-  transition: opacity 0.3s ease;
+  transition: 150ms ease;
   background-image: linear-gradient(transparent 50%, skyblue 50%);
   background-size: 100% 4px;
   background-repeat: repeat-x;
@@ -48,7 +48,8 @@ a {
 
 a:hover,
 a:focus {
-  opacity: 0.666;
+  background-image: linear-gradient(transparent 50%, powderblue 50%);
+  background-size: 100% 2em;
  }
 
 strong {

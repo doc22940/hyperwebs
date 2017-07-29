@@ -11,7 +11,7 @@ export default () => (
     </Heading>
     <Heading is='h2' fontSize={4} css={{ letterSpacing: '0.0125em' }}>
       <Color is='span' color='slategray'>
-        Designer/developer
+        Designer
       </Color>
     </Heading>
   </Box>

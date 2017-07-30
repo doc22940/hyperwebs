@@ -61,8 +61,15 @@ strong {
 
 img,
 svg {
-  height: auto;
   max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+.banner {
+  background: #111215;
 }
 
 @keyframes rotation {
@@ -73,7 +80,7 @@ svg {
 
 @keyframes pulse {
   0% { opacity: 1; }
-  50% { opacity: 0.151515; transform: scale(0.95) }
+  50% { opacity: 0.151515; transform: scale(0.9625) }
   100% { opacity: 1; }
 }
 

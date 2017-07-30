@@ -5,12 +5,12 @@ html {
 }
 
 body {
+  color: #222;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   line-height: 1.666;
-  color: #111;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
@@ -23,6 +23,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #111;
   font-family: '.SFUIDisplay-Medium', '.SFNSDisplay-Medium', -apple-system, BlinkMacSystemFont, 'SF UI Display', Roboto, 'Segoe UI', Helvetica Neue, sans-serif;
   font-weight: 500;
 }
@@ -31,26 +32,27 @@ h1 {
   text-transform: uppercase;
 }
 
-p { margin: 0; }
+p { margin: 0;}
 p + p { margin-top: 1.6rem; }
 
 a {
+  background-image: linear-gradient(transparent 50%, skyblue 50%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 100% 4px;
+  color: currentColor;
+  cursor: pointer;
+  font-weight: 500;
   padding: 0.25em 0;
   text-decoration: none;
-  color: currentColor;
-  font-weight: 500;
   transition: 150ms ease;
-  background-image: linear-gradient(transparent 50%, skyblue 50%);
-  background-size: 100% 4px;
-  background-repeat: repeat-x;
-  background-position: bottom;
-  cursor: pointer;
 }
 
 a:hover,
 a:focus {
   background-image: linear-gradient(transparent 50%, powderblue 50%);
   background-size: 100% 3em;
+  color: #000;
  }
 
 strong {
@@ -59,8 +61,8 @@ strong {
 
 img,
 svg {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 @keyframes rotation {

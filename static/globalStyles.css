@@ -35,6 +35,7 @@ p { margin: 0; }
 p + p { margin-top: 1.6rem; }
 
 a {
+  padding: 0.25em 0;
   text-decoration: none;
   color: currentColor;
   font-weight: 500;
@@ -49,9 +50,46 @@ a {
 a:hover,
 a:focus {
   background-image: linear-gradient(transparent 50%, powderblue 50%);
-  background-size: 100% 2em;
+  background-size: 100% 3em;
  }
 
 strong {
   font-weight: 600;
 }
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes rotation {
+  0% { opacity: 0.666; }
+  50% { transform: scale(1.25) rotate(180deg); opacity: 0.151515; }
+  100% { transform: scale(1) rotate(360deg); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.151515; transform: scale(0.95) }
+  100% { opacity: 1; }
+}
+
+.rotation {
+  animation: rotation 60s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.pulse {
+  animation: pulse 6s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+.pulse:nth-child(1) { animation-delay: 0; }
+.pulse:nth-child(2) { animation-delay: 1s; }
+.pulse:nth-child(3) { animation-delay: 2s; }
+.pulse:nth-child(4) { animation-delay: 3s; }
+.pulse:nth-child(5) { animation-delay: 4s; }
+.pulse:nth-child(6) { animation-delay: 5s; }
+.pulse:nth-child(7) { animation-delay: 6s; }
+.pulse:nth-child(8) { animation-delay: 7s; }

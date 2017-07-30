@@ -2,13 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import { Box, Text, Heading } from 'axs'
 
+import Banner from '../components/Banner'
 import DefaultLayout from '../layouts/DefaultLayout'
 import TopBar from '../components/TopBar'
 
 export default () => (
   <DefaultLayout title='Home'>
     <TopBar />
-    <Box pb={[32, 64]} px={[32, 64, null, 128]} css={{background: 'white'}}>
+    <Banner />
+    <Box py={[32, 64]} px={[32, 64, null, 128]} css={{background: 'white'}}>
       <Text is='p' fontSize={['1.25rem']} width={[1, 3 / 4, 2 / 3]}>
         Hello! I am a designer with nine years of experience working across branding, user interface and graphic design. For the past four years, I have specialised in designing and building engaging and performant design systems on the web.
       </Text>
